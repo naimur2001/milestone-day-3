@@ -1,0 +1,47 @@
+img{
+  height: 100%;
+  width: 100%;
+}
+.row{
+
+  margin-bottom: 5px;
+}
+.sr,.tr{
+  display: flex;
+  gap: 5px;
+}
+.sr > div{
+  flex: 1;
+}
+.sr .d1{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.sr .d1 img{
+  height: 198px;
+  
+}
+.d2{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 5px;
+}
+.tr > div{
+  flex: 1;
+}
+@media screen and (max-width:576px) {
+  .sr,.tr{
+    flex-direction: column;
+    
+  }
+  .d2{
+  grid-template-columns: repeat(1,1fr) ;
+  }
+}
+@media screen and (min-width:577px)  {
+ .row{
+  height: 400px;
+ }
+}
+
